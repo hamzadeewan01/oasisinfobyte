@@ -10,13 +10,11 @@
     href="./images/HD.png"
     type="image/x-icon">
     <link rel="stylesheet" href="calculator.css">
+    <script>
+      document.addEventListener('contextmenu', event => event.preventDefault());
+      </script> 
 </head>
 <body>
-    <!-- Design credit goes to Awesomed : https://dribbble.com/awesomed
-For his beautiful calculator design:
-https://dribbble.com/shots/2610388-Simple-calculator-animation
--->
-
 <div class="page">
 
     <div class="calculator">
@@ -45,7 +43,7 @@ https://dribbble.com/shots/2610388-Simple-calculator-animation
           <div id="-" class="operator">-</div>
         </div>
         <div class="row">
-          <div id="reset" class="c  input">C</div>
+          <div id="reset" class="c  input"><b>C</b></div>
           <div id="0" class="input">0</div>
           <div id="." class="input">.</div>
           <div id="+" class="operator">+</div>
