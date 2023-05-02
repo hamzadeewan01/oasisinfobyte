@@ -20,16 +20,16 @@ document.addEventListener('DOMContentLoaded', function() {
       taskLabel.innerText = taskText;
   
       const dateSpan = document.createElement('span');
-      dateSpan.innerText = getCurrentDateTime();
+      dateSpan.innerText = ' - ' + getCurrentDateTime() + '  ';
   
       const completeButton = document.createElement('button');
-      completeButton.innerText = 'Complete';
+      completeButton.innerText = 'Complete ';
       completeButton.addEventListener('click', function() {
         completeTask(listItem);
       });
   
       const deleteButton = document.createElement('button');
-      deleteButton.innerText = 'Delete';
+      deleteButton.innerText = ' Delete';
       deleteButton.addEventListener('click', function() {
         deleteTask(listItem);
       });
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
       taskLabel.classList.add('completed');
   
       const completeButton = listItem.querySelector('button');
-      completeButton.innerText = 'Completed';
+      completeButton.innerText = 'Completed ';
       completeButton.disabled = true;
   
       const dateSpan = listItem.querySelector('span');
@@ -66,5 +66,3 @@ document.addEventListener('DOMContentLoaded', function() {
       return currentDate.toLocaleString(undefined, options);
     }
   });
-  
-  
