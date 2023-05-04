@@ -1,0 +1,43 @@
+body {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+* {
+  align-items: center;
+}
+.bg {
+  margin-top: 10px;
+  padding-top: 10px;
+  text-align: center;
+  height: 90vh;
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow: 35px 35px 70px #5a5a5a, -35px -35px 70px #ffffff;
+}
+
+img {
+  border-radius: 60%;
+  height: 380px;
+  width: 300px;
+}
+
+ul {
+  position: absolute;
+  margin-top: 750px;
+  text-align: left;
+  margin-left: 150px;
+  margin-right: 150px;
+  font-family: "Varela Round", sans-serif;
+  font-size: 18px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
