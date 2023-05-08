@@ -1,43 +1,11 @@
-// Add a sticky header
-window.addEventListener("scroll", function() {
-    const header = document.querySelector("header");
-    header.classList.toggle("sticky", window.scrollY > 0);
-  });
-  
-  // Smooth scroll to section on click
-  const navLinks = document.querySelectorAll("nav a");
-  
-  navLinks.forEach(link => {
-    link.addEventListener("click", function(event) {
-      event.preventDefault();
-  
-      const section = document.querySelector(this.hash);
-  
-      window.scrollTo({
-        top: section.offsetTop - header.offsetHeight,
-        behavior: "smooth"
-      });
-    });
-  });
-  
-  // Adjust active link in navbar on scroll
-  window.addEventListener("scroll", function() {
-    const currentScroll = window.pageYOffset;
-  
-    navLinks.forEach(link => {
-      const section = document.querySelector(link.hash);
-  
-      if (
-        section.offsetTop <= currentScroll &&
-        section.offsetTop + section.offsetHeight > currentScroll
-      ) {
-        link.classList.add("active");
-      } else {
-        link.classList.remove("active");
-      }
-    });
-  });
-  (function() { "use strict";
+/**
+* Template Name: Personal - v4.9.1
+* Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+(function() {
+  "use strict";
 
   /**
    * Easy selector helper function
@@ -281,6 +249,4 @@ window.addEventListener("scroll", function() {
    */
   new PureCounter();
 
-})()  
-          
-  
+})()
