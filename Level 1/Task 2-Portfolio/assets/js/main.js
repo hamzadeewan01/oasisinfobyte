@@ -1,9 +1,4 @@
-/**
-* Template Name: Personal - v4.9.1
-* Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 (function() {
   "use strict";
 
@@ -19,9 +14,7 @@
     }
   }
 
-  /**
-   * Easy event listener function
-   */
+  
   const on = (type, el, listener, all = false) => {
     let selectEl = select(el, all)
 
@@ -34,9 +27,7 @@
     }
   }
 
-  /**
-   * Scrolls to an element with header offset
-   */
+  
   const scrollto = (el) => {
     window.scrollTo({
       top: 0,
@@ -44,18 +35,14 @@
     })
   }
 
-  /**
-   * Mobile nav toggle
-   */
+ 
   on('click', '.mobile-nav-toggle', function(e) {
     select('#navbar').classList.toggle('navbar-mobile')
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
   })
 
-  /**
-   * Scrool with ofset on links with a class name .scrollto
-   */
+ 
   on('click', '#navbar .nav-link', function(e) {
     let section = select(this.hash)
     if (section) {
@@ -107,9 +94,6 @@
     }
   }, true)
 
-  /**
-   * Activate/show sections on load with hash links
-   */
   window.addEventListener('load', () => {
     if (window.location.hash) {
       let initial_nav = select(window.location.hash)
@@ -137,9 +121,7 @@
     }
   });
 
-  /**
-   * Skills animation
-   */
+ 
   let skilsContent = select('.skills-content');
   if (skilsContent) {
     new Waypoint({
@@ -154,9 +136,7 @@
     })
   }
 
-  /**
-   * Testimonials slider
-   */
+
   new Swiper('.testimonials-slider', {
     speed: 600,
     loop: true,
@@ -183,9 +163,7 @@
     }
   });
 
-  /**
-   * Porfolio isotope and filter
-   */
+
   window.addEventListener('load', () => {
     let portfolioContainer = select('.portfolio-container');
     if (portfolioContainer) {
@@ -211,25 +189,18 @@
 
   });
 
-  /**
-   * Initiate portfolio lightbox 
-   */
+  
   const portfolioLightbox = GLightbox({
     selector: '.portfolio-lightbox'
   });
 
-  /**
-   * Initiate portfolio details lightbox 
-   */
   const portfolioDetailsLightbox = GLightbox({
     selector: '.portfolio-details-lightbox',
     width: '90%',
     height: '90vh'
   });
 
-  /**
-   * Portfolio details slider
-   */
+ 
   new Swiper('.portfolio-details-slider', {
     speed: 400,
     loop: true,
@@ -244,9 +215,7 @@
     }
   });
 
-  /**
-   * Initiate Pure Counter 
-   */
+  
   new PureCounter();
 
 })()
